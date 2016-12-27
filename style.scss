@@ -74,8 +74,7 @@ html, body {
 }
 
 .main-stories {
-  height: 66%;
-  padding: 5% 3%;
+  padding: 5% 3% 0.3%;
   text-align: center;
   h2 {
     @include roboto-expanded;
@@ -89,7 +88,7 @@ html, body {
     @include story-bg(.1, "http://static.spin.com/files/2016/12/childishgambino-1481813072-640x427.png");
     display: table;
     width: 100%;
-    height: 68%;
+    height: 15em;
     margin-bottom: 5%;
     h2 {
       font-size: 100%;
@@ -98,11 +97,10 @@ html, body {
   div:nth-child(2) {
     display: flex;
     justify-content: space-between;
-    height: 32%;
     div {
       display: inline-table;
       width: 49%;
-      height: 100%;
+      height: 8em;
       h2 {
         font-size: 86%;
       }
@@ -117,24 +115,21 @@ html, body {
 }
 
 .other-stories {
-  height: 65%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 6% 2%;
+  padding: 0 2%;
   @include roboto-expanded;
   div {
     display: flex;
     flex-direction: column;
     width: 49%;
-    height: 50%;
     img {
-      min-height: 67%;
-      max-height: 67%;
+      height: 8em;
     }
     h2 {
       font-size: 60%;
-      margin-top: 0.4em;
+      margin: 0.4em auto 1.4em;
       text-align: center;
     }
   }
@@ -174,14 +169,13 @@ html, body {
   }
 
   .main-stories {
-    height: 68%;
     display: flex;
     flex-wrap: nowrap;
     padding: 2.5% 10%;
     div:first-child {
       display: inline-table;
       width: 63%;
-      height: 100%;
+      height: 29em;
       margin-bottom: 0;
       h2 {
         font-size: 135%;
@@ -189,24 +183,21 @@ html, body {
     }
     div:nth-child(2) {
       width: 34%;
-      height: 100%;
       flex-direction: column;
       div {
         margin-left: 10%;
         width: 100%;
-        height: 48%;
+        height: 13.5em;
       }
     }
   }
 
   .other-stories {
-    height: 89%;
     padding: 0 10%;
     div {
       width: 30%;
       img {
-        min-height: 77%;
-        max-height: 77%;
+        height: 13.7em;
       }
       h2 {
         font-size: 80%;
