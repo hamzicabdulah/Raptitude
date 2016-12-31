@@ -1,7 +1,12 @@
 var app = angular.module('raptitude', ['ui.router']);
-app.controller('raptitudeCtrl', function ($scope) {
-  $scope.var = 1;
+
+app.controller('raptitudeCtrl', function ($scope, $http) {
+  $scope.stories = [];
+  $http.get('stories.json').success(function(data){
+    $scope.stories = data;
+  });
 });
+
 app.config(function ($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
   $stateProvider
