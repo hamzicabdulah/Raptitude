@@ -2,11 +2,11 @@ var app = angular.module('raptitude', ['ui.router']);
 
 app.controller('raptitudeCtrl', function ($scope, $http) {
   $http.get('stories.json').
-    success(function(data) {
+    then(function(data) {
       $scope.posts = data;
-    }).
-    error(function(data) {
-      console.log('error');
+    }), function(response) {
+        //Second function handles error
+        console.log("Something went wrong");
     });
     console.log($scope.posts);
 });
