@@ -3,6 +3,7 @@ var app = angular.module('raptitude', ['ui.router']);
 app.controller('raptitudeCtrl', function ($scope, $http) {
   $scope.stories = [];
   $http.get('stories.json').success(function(data){
+    console.log(data);
     $scope.stories = data;
   });
   console.log($scope.stories);
