@@ -24,7 +24,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
       views: {
         'content@': {
           templateUrl : 'features.html'
-        },
+        }
       }
     });
 });
