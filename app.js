@@ -11,6 +11,7 @@ app.controller('raptitudeCtrl', function ($http, $scope, $timeout) {
     });
   $timeout(function () {
     console.log(_this.data);
+    $scope.stories = _this.data;
   }, 1000)
 });
 
