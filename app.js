@@ -19,8 +19,8 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         }
       }
     });
-    .state('features', {
-      url:'app.features',
+    .state('app.features', {
+      url:'features',
       views: {
         'content@': {
           templateUrl : 'features.html'
