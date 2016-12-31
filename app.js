@@ -1,14 +1,16 @@
 var app = angular.module('raptitude', ['ui.router']);
 
 app.controller('raptitudeCtrl', function ($http, $scope, $timeout) {
-  $http.get("https://api.myjson.com/bins/uy51b")
+  var _this = this;
+  _this.data = {};
+  $http.get("stories.json")
     .then(function(response) {
-        $scope.stories = response.data;
+        _this.data = response.data;
     }, function(response) {
         console.log("Something went wrong");
     });
   $timeout(function () {
-    console.log($scope.stories);
+    console.log(_this.data);
   }, 1000)
 });
 
