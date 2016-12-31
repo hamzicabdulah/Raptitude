@@ -5,6 +5,7 @@ app.controller('raptitudeCtrl', function ($scope, $http) {
   $http.get('stories.json').success(function(data){
     $scope.stories = data;
   });
+  console.log($scope.stories);
 });
 
 app.config(function ($stateProvider, $urlRouterProvider) {
