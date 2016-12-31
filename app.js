@@ -6,11 +6,11 @@ app.controller('raptitudeCtrl', function ($http, $scope, $timeout) {
   $http.get("stories.json")
     .then(function(response) {
         _this.data = response.data;
+        $scope.stories = _this.data;
     }, function(response) {
         console.log("Something went wrong");
     });
-  console.log(_this.data);
-  $scope.stories = _this.data;
+  console.log($scope.stories);
 });
 
 app.config(function ($stateProvider, $urlRouterProvider) {
