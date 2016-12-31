@@ -4,10 +4,10 @@ app.controller('raptitudeCtrl', function ($scope, $http) {
   $http.get('stories.json').
     then(function(data) {
       $scope.posts = data;
-    }), function(response) {
+    }, function(response) {
         //Second function handles error
         console.log("Something went wrong");
-    }); 
+    });
     console.log($scope.posts);
 });
 
