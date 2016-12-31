@@ -9,10 +9,8 @@ app.controller('raptitudeCtrl', function ($http, $scope, $timeout) {
     }, function(response) {
         console.log("Something went wrong");
     });
-  $timeout(function () {
-    console.log(_this.data);
-    $scope.stories = _this.data;
-  }, 1000)
+  console.log(_this.data);
+  $scope.stories = _this.data;
 });
 
 app.config(function ($stateProvider, $urlRouterProvider) {
