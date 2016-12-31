@@ -7,7 +7,7 @@ app.controller('raptitudeCtrl', function ($scope, $http) {
     }), function(response) {
         //Second function handles error
         console.log("Something went wrong");
-    });
+    }); 
     console.log($scope.posts);
 });
 
