@@ -18,7 +18,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
           templateUrl : 'footer.html'
         }
       }
-    });
+    })
     .state('app.features', {
       url:'features',
       views: {
