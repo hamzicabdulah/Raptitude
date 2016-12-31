@@ -100,18 +100,21 @@ html, body {
       text-align: center; }
 
 .footer {
-  padding: 2% 5%;
+  display: flex;
+  padding: 2% 5% 1.8em;
   background: #800000; }
-  .footer h4 {
-    color: #ffff80;
-    margin-bottom: 0.3em;
-    text-transform: uppercase;
-    font-family: "New Rocker", serif; }
-  .footer a {
-    display: block;
-    color: #d9d9d9;
-    text-decoration: none;
-    font-family: Roboto, sans-serif; }
+  .footer div {
+    padding-right: 3em; }
+    .footer div h4 {
+      color: #ffff80;
+      margin-bottom: 0.3em;
+      text-transform: uppercase;
+      font-family: "New Rocker", serif; }
+    .footer div a {
+      display: block;
+      color: #d9d9d9;
+      text-decoration: none;
+      font-family: Roboto, sans-serif; }
 
 @media screen and (min-width: 768px) {
   .navbar {
@@ -154,6 +157,9 @@ html, body {
       .other-stories div img {
         height: 13.7em; }
       .other-stories div h2 {
-        font-size: 80%; } }
+        font-size: 80%; }
+
+  .footer div {
+    padding-right: 6em; } }
 
 /*# sourceMappingURL=style.css.map */

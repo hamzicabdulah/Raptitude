@@ -136,19 +136,23 @@ html, body {
 }
 
 .footer {
-  padding: 2% 5%;
+  display: flex;
+  padding: 2% 5% 1.8em;
   background: $dark-red;
-  h4 {
-    color: $yellow-shade;
-    margin-bottom: 0.3em;
-    text-transform: uppercase;
-    font-family: "New Rocker", serif;
-  }
-  a {
-    display: block;
-    color: $light-gray;
-    text-decoration: none;
-    font-family: Roboto, sans-serif;
+  div {
+    padding-right: 3em;
+    h4 {
+      color: $yellow-shade;
+      margin-bottom: 0.3em;
+      text-transform: uppercase;
+      font-family: "New Rocker", serif;
+    }
+    a {
+      display: block;
+      color: $light-gray;
+      text-decoration: none;
+      font-family: Roboto, sans-serif;
+    }
   }
 }
 
@@ -202,6 +206,12 @@ html, body {
       h2 {
         font-size: 80%;
       }
+    }
+  }
+
+  .footer {
+    div {
+      padding-right: 6em;
     }
   }
 
