@@ -116,6 +116,11 @@ html, body {
       text-decoration: none;
       font-family: Roboto, sans-serif; }
 
+.feature-story {
+  display: flex; }
+  .feature-story img, .feature-story div {
+    width: 40%; }
+
 @media screen and (min-width: 768px) {
   .navbar {
     padding-left: 3em !important;

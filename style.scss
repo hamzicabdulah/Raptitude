@@ -156,6 +156,13 @@ html, body {
   }
 }
 
+.feature-story {
+  display: flex;
+  img, div {
+    width: 40%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .navbar {
     padding-left: 3em!important;
