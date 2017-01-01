@@ -22,7 +22,16 @@
     },
     {
       "image": "images/black-star.jpg",
-      "header": "My favorite live rap performance of all time"
+      "header": "My favorite live rap performance of all time",
+      "content": "Live rap performances can be really great.dsj jsdklfdsklf klsdklf lkdsfkl dsklfdsjk jklfdskjl kjsdfklj dlksjfklj sd SAMPLE SSAMPLE"
+    }
+  ],
+
+  "features": [
+    {
+      "image": "images/black-star.jpg",
+      "header": "My favorite live rap performance of all time",
+      "content": "Live rap performances can be really great.dsj jsdklfdsklf klsdklf lkdsfkl dsklfdsjk jklfdskjl kjsdfklj dlksjfklj sd SAMPLE SSAMPLE"
     }
   ]
 }
