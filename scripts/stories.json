@@ -1,0 +1,41 @@
+{
+  "otherStories": [
+    {
+      "image": "images/kid-cudi-album.jpg",
+      "header": "Kid Cudi - Passion, Pain & Demon Slayin' (Album Review)"
+    },
+    {
+      "image": "images/j-cole-false-prophets.jpg",
+      "header": "J. Cole with two new fire tracks"
+    },
+    {
+      "image": "images/Andre3000.jpg",
+      "header": "Why we need a solo Andre 3000 album"
+    },
+    {
+      "image": "images/your-boy-tony.jpg",
+      "header": "Shad actually released a pop album this year?"
+    },
+    {
+      "image": "images/frank-ocean.jpg",
+      "header": "Frank Ocean songs that are never getting any boring"
+    },
+    {
+      "image": "images/black-star.jpg",
+      "header": "My favorite live rap performance of all time"
+    }
+  ],
+
+  "features": [
+    {
+      "image": "images/black-star.jpg",
+      "header": "My favorite live rap performance of all time",
+      "content": "Live rap performances can be really great.dsj jsdklfdsklf klsdklf lkdsfkl dsklfdsjk jklfdskjl kjsdfklj dlksjfklj sd SAMPLE SSAMPLE sdjkfj sdfhjkdsj k "
+    },
+    {
+      "image": "images/black-star.jpg",
+      "header": "My favorite live rap performance of all time",
+      "content": "Live rap performances can often be more enjoyable than studio versions of songs. Here's a short compilation of some of my favorite live hip-hop performances ever."
+    }
+  ]
+}

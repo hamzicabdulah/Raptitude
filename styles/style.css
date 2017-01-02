@@ -1,0 +1,142 @@
+@font-face {
+  font-family: Kavoon;
+  src: url(fonts/Kavoon.ttf#iefix); }
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto.ttf#iefix); }
+@font-face {
+  font-family: "New Rocker";
+  src: url(fonts/NewRocker.ttf#iefix); }
+.header h1 {
+  text-align: center;
+  font-family: "New Rocker", serif;
+  font-size: 3em;
+  background: #d9d9d9;
+  padding: 0.4em 0;
+  color: #800000;
+  margin: 0 auto; }
+.header .nav-bar {
+  padding: 1em 0 1em 0;
+  background: #800000; }
+  .header .nav-bar a {
+    display: none; }
+  .header .nav-bar .collapse-btn {
+    text-align: center; }
+    .header .nav-bar .collapse-btn span {
+      background: #ffff80;
+      margin: 0 auto;
+      width: 1.8em;
+      height: .22em;
+      display: block; }
+      .header .nav-bar .collapse-btn span:not(:last-child) {
+        margin-bottom: 0.2em; }
+
+.main-stories {
+  padding: 2% 2%; }
+  .main-stories h2 {
+    height: 4em;
+    letter-spacing: 0.09em;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 90%;
+    color: white;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle; }
+  .main-stories div:first-child {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("http://static.spin.com/files/2016/12/childishgambino-1481813072-640x427.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30% 2%;
+    display: table;
+    margin-bottom: 5%; }
+  .main-stories div:nth-child(2) {
+    padding: 0 2%; }
+    .main-stories div:nth-child(2) div {
+      width: 48%;
+      padding: 17% 2%;
+      display: inline-table; }
+      .main-stories div:nth-child(2) div:first-child {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://runthetrap.com/wp-content/uploads/2016/05/Andre-3000-Kid-Cudi-Run-The-Trap.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 3.5%; }
+      .main-stories div:nth-child(2) div:nth-child(2) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.genius.com/9f26b6fd00178d84a1d89dc1a9e50b84.680x680x1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; }
+
+.other-stories {
+  letter-spacing: 0.09em;
+  font-family: Roboto, sans-serif;
+  font-weight: bold; }
+  .other-stories div div {
+    padding: 40% 2%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .other-stories div h2 {
+    height: 2.9em;
+    font-size: 70%;
+    margin: 0.4em 0 1.7em;
+    text-align: center; }
+
+.footer {
+  padding: 2% 5% 1.8em;
+  background: #800000; }
+  .footer div {
+    padding-right: 3em; }
+    .footer div h4 {
+      color: #ffff80;
+      margin-bottom: 0.3em;
+      text-transform: uppercase;
+      font-family: "New Rocker", serif; }
+    .footer div a {
+      display: block;
+      color: #d9d9d9;
+      text-decoration: none;
+      font-family: Roboto, sans-serif; }
+
+@media screen and (min-width: 990px) {
+  .nav-bar {
+    padding-left: 3em !important;
+    text-transform: uppercase; }
+    .nav-bar .collapse-btn {
+      display: none; }
+    .nav-bar a {
+      letter-spacing: 0.09em;
+      font-family: Roboto, sans-serif;
+      font-weight: bold;
+      display: inline-block !important;
+      margin-right: 2.5em;
+      color: #ffff80;
+      text-decoration: none; }
+
+  .main-stories {
+    padding: 2% 10%; }
+    .main-stories h2 {
+      font-size: 110%; }
+    .main-stories div:first-child {
+      display: inline-table;
+      margin-bottom: 0;
+      padding: 18% 2%; }
+    .main-stories div:nth-child(2) {
+      padding: 0 1.4% 0; }
+      .main-stories div:nth-child(2) div {
+        padding: 18.7% 2%;
+        width: 100%; }
+        .main-stories div:nth-child(2) div:first-child {
+          margin-bottom: 3%; }
+
+  .other-stories {
+    padding: 0 7.7%; }
+    .other-stories div div {
+      padding: 31.5% 2%; }
+    .other-stories div h2 {
+      height: 2em !important;
+      font-size: 100% !important; } }
+
+/*# sourceMappingURL=style.css.map */

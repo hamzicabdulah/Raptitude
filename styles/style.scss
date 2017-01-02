@@ -1,0 +1,193 @@
+@font-face {
+  font-family: Kavoon;
+  src: url(fonts/Kavoon.ttf#iefix);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto.ttf#iefix);
+}
+@font-face {
+  font-family: "New Rocker";
+  src: url(fonts/NewRocker.ttf#iefix);
+}
+
+$dark-red: #800000;
+$yellow-shade: #ffff80;
+$light-gray: #d9d9d9;
+
+@mixin roboto-expanded {
+  letter-spacing: 0.09em;
+  font: {
+    family: Roboto, sans-serif;
+    weight: bold;
+  }
+}
+
+@mixin story-bg ($opacity, $url) {
+  background: {
+    image: linear-gradient(rgba(0, 0, 0, $opacity), rgba(0, 0, 0, $opacity)), url($url);
+    size: cover;
+    repeat: no-repeat;
+    position: center;
+  }
+}
+
+.header {
+  h1 {
+    text-align: center;
+    font: {
+      family: "New Rocker", serif;
+      size: 3em;
+    }
+    background: $light-gray;
+    padding: 0.4em 0;
+    color: $dark-red;
+    margin: 0 auto;
+  }
+  .nav-bar {
+    padding: 1em 0 1em 0;
+    background: $dark-red;
+    a {
+      display: none;
+    }
+    .collapse-btn {
+      text-align: center;
+      span {
+        background: $yellow-shade;
+        margin: 0 auto;
+        width: 1.8em;
+        height: .22em;
+        display: block;
+        &:not(:last-child) {
+          margin-bottom: 0.2em;
+        }
+      }
+    }
+  }
+}
+
+.main-stories {
+  padding: 2% 2%;
+  h2 {
+    height: 4em;
+    @include roboto-expanded;
+    font-size: 90%;
+    color: white;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  div:first-child {
+    @include story-bg(.1, "http://static.spin.com/files/2016/12/childishgambino-1481813072-640x427.png");
+    padding: 30% 2%;
+    display: table;
+    margin-bottom: 5%;
+  }
+  div:nth-child(2) {
+    padding: 0 2%;
+    div {
+      width: 48%;
+      padding: 17% 2%;
+      display: inline-table;
+      &:first-child {
+        @include story-bg(.5, "http://runthetrap.com/wp-content/uploads/2016/05/Andre-3000-Kid-Cudi-Run-The-Trap.jpg");
+        margin-right: 3.5%;
+      }
+      &:nth-child(2) {
+        @include story-bg(.6, "https://images.genius.com/9f26b6fd00178d84a1d89dc1a9e50b84.680x680x1.jpg");
+      }
+    }
+  }
+}
+
+.other-stories {
+  @include roboto-expanded;
+  div {
+    div {
+      padding: 40% 2%;
+      background: {
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+      }
+    }
+    h2 {
+      height: 2.9em;
+      font-size: 70%;
+      margin: 0.4em 0 1.7em;
+      text-align: center;
+    }
+  }
+}
+
+.footer {
+  padding: 2% 5% 1.8em;
+  background: $dark-red;
+  div {
+    padding-right: 3em;
+    h4 {
+      color: $yellow-shade;
+      margin-bottom: 0.3em;
+      text-transform: uppercase;
+      font-family: "New Rocker", serif;
+    }
+    a {
+      display: block;
+      color: $light-gray;
+      text-decoration: none;
+      font-family: Roboto, sans-serif;
+    }
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .nav-bar {
+    padding-left: 3em!important;
+    text-transform: uppercase;
+    .collapse-btn {
+      display: none;
+    }
+    a {
+      @include roboto-expanded;
+      display: inline-block!important;
+      margin-right: 2.5em;
+      color: $yellow-shade;
+      text-decoration: none;
+    }
+  }
+
+  .main-stories {
+    padding: 2% 10%;
+    h2 {
+      font-size: 110%;
+    }
+    div:first-child {
+      display: inline-table;
+      margin-bottom: 0;
+      padding: 18% 2%;
+    }
+    div:nth-child(2) {
+      padding: 0 1.4% 0;
+      div {
+        padding: 18.7% 2%;
+        width: 100%;
+        &:first-child {
+          margin-bottom: 3%;
+        }
+      }
+    }
+  }
+
+  .other-stories {
+    padding: 0 7.7%;
+    div {
+      div {
+        padding: 31.5% 2%;
+      }
+      h2 {
+        height: 2em!important;
+        font-size: 100%!important;
+      }
+    }
+  }
+}

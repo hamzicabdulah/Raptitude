@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet"/>
+    <link href="bower_components/bootstrap.min.css" rel="stylesheet"/>
+    <link href="styles/style.css" rel="stylesheet"/>
     <!--Loading AngularJS in the head, so that page doesn't load before all Angular components are loaded-->
     <script src="bower_components/angular.min.js"></script>
     <script src="bower_components/angular-ui-router.min.js"></script>
@@ -12,9 +13,12 @@
   <body ng-app="raptitude" ng-controller="raptitudeCtrl">
 
     <div ui-view="header"></div>
-    <div ui-view="content"></div>
-    <div ui-view="footer"></div>
 
-    <script src="app.js"></script>
+    <div class="container-fluid">
+      <div ui-view="content"></div>
+      <div ui-view="footer"></div>
+    </div>
+
+    <script src="scripts/app.js"></script>
   </body>
 </html>
