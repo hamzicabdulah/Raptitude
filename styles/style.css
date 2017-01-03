@@ -100,7 +100,18 @@
       text-decoration: none;
       font-family: Roboto, sans-serif; }
 
-@media screen and (min-width: 990px) {
+.feature-stories {
+  padding: 10% 2% 5%; }
+  .feature-stories div {
+    padding-bottom: 2%; }
+    .feature-stories div h2 {
+      margin-top: 1%;
+      font-size: 100%;
+      text-align: center; }
+    .feature-stories div p {
+      display: none; }
+
+@media screen and (min-width: 768px) {
   .nav-bar {
     padding-left: 3em !important;
     text-transform: uppercase; }
@@ -137,6 +148,15 @@
       padding: 31.5% 2%; }
     .other-stories div h2 {
       height: 2em !important;
-      font-size: 100% !important; } }
+      font-size: 100% !important; }
+
+  .feature-stories {
+    padding: 2% 10%; }
+    .feature-stories div h2 {
+      font-size: 160%;
+      text-align: left; }
+    .feature-stories div p {
+      font-size: 90%;
+      display: inline-block; } }
 
 /*# sourceMappingURL=style.css.map */
